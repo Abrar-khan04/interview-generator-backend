@@ -3,16 +3,20 @@ uvicorn[standard]
 python-multipart
 PyPDF2
 python-docx
-google-generativeai
 python-dotenv
 psycopg2-binary
-bcrypt
+requests
+pydantic
+email-validator
+
+# Auth & Security
 pyjwt
 python-jose[cryptography]
-passlib[bcrypt]
-requests
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+
+# Google / Gemini
+google-generativeai
 google-auth
 google-auth-oauthlib
 google-auth-httplib2
-pydantic
-email-validator
